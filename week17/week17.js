@@ -118,3 +118,14 @@
 //Задание 9
 //Создайте класс Student. Класс должен содержать свойства name, age и grade. 
 //Создайте на его основе объект student и выведите его свойства в консоль.
+
+class Student{
+  constructor(name, age, grade) {
+    this.age=age;
+    this.name=name;
+    this.grade=grade;
+    
+  }
+}
+const student =new Student("Тата","33","5");
+console.log(student);
