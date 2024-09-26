@@ -119,13 +119,31 @@
 //Создайте класс Student. Класс должен содержать свойства name, age и grade. 
 //Создайте на его основе объект student и выведите его свойства в консоль.
 
-class Student{
-  constructor(name, age, grade) {
-    this.age=age;
-    this.name=name;
-    this.grade=grade;
+//class Student{
+  //constructor(name, age, grade) {
+    //this.age=age;
+   // this.name=name;
+  //  this.grade=grade;
     
+ // }
+//}
+//const student =new Student("Тата","33","5");
+//console.log(student);
+
+//Задание 10
+//Добавьте в класс Student метод increaseGrade, который будет увеличивать текущую оценку на 1. 
+//Создайте объект student2 на основе класса Student, увеличьте его оценку с помощью метода increaseGrade
+// и выведите новую оценку в консоль.
+class Student {
+  constructor(name, age, grade) {
+    this.name = name;
+    this.age = age;
+    this.grade = grade;
+  }
+  increaseGrade(){
+    this.grade += 1;
   }
 }
-const student =new Student("Тата","33","5");
-console.log(student);
+const student = new Student("Cat", 29, 2);
+student.increaseGrade();
+console.log(student.grade);
