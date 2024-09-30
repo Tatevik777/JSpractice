@@ -278,15 +278,105 @@
 //Задание 19
 //В классе Point добавлен метод getDistance, который будет возвращать расстояние от точки до начала координат (0,0).
 // Создайте объект point на основе класса Point и выведите его расстояние до начала координат с помощью метода getDistance.
-class Point {
-  constructor(x, y) {
-    this.x = x;
-    this.y = y;
-  }
+//class Point {
+  //constructor(x, y) {
+   // this.x = x;
+   // this.y = y;
+ // }
   // Метод getDistance возвращает расстояние от точки до начала координат (0,0)
-  getDistance() {
-    return Math.sqrt(this.x ** 2 + this.y ** 2);
-  }
-}
-const point=new Point(4,20);
-console.log(point.getDistance());
+  //getDistance() {
+   // return Math.sqrt(this.x ** 2 + this.y ** 2);
+  //}
+//}
+//const point=new Point(4,20);
+//console.log(point.getDistance());
+//Задание 20
+//Создайте класс Calculator. Класс должен содержать методы add, 
+//subtract, multiply и divide, которые будут выполнять соответствующие математические 
+//операции над двумя числами и возвращать результат. Создайте объект calc на основе класса
+// Calculator и выполните следующее математическое выражение: (((2+2)-1)*4)\2 с помощью методов.
+// Результат вывести в консоль.
+
+//class Calculator {
+  //add(num1, num2) {
+   // return num1 + num2;
+  //}
+  //subtract(num1, num2) {
+   // return num1 - num2;
+  //}
+  //multiply(num1, num2) {
+   // return num1 * num2;
+ // }
+  //divide(num1, num2) {
+    //return num1 / num2;
+ // }
+//}
+//длинный вариант.
+//const calc = new Calculator();
+//const addResult = calc.add(2, 2);
+//const subtractResult = calc.subtract(addResult, 1);
+//const multiplyResult = calc.multiply(subtractResult, 4);
+//const divideResult = calc.divide(multiplyResult, 2);
+//console.log(divideResult);
+///сокращенный вариант.
+//console.log(calc.divide(calc.multiply(calc.subtract(calc.add(2, 2), 1), 4), 2));
+
+//Задание 21
+//Создайте класс Person. Класс должен содержать свойства name, age и city.
+// Создайте на его основе объект person. Cоздайте переменную personInfo и в 
+//нее поместите строчку, в которой будет вся информация из обьекта. 
+//Должно получиться: 'Josh, 43, London' и выведите personInfo в консоль
+//class Person{
+  //constructor(name, age,city){
+  //this.age=age;
+  //this.name=name;
+ // this.city=city;
+ // }
+//}
+//const person = new Person("Josh", 43, "london");
+//const personInfo = `${person.name},${person.age},${person.city}`;
+//console.log(personInfo);
+
+//Задание 22
+//Добавьте в класс Person метод changeCity, который будет изменять 
+//значение свойства city на новое значение. Создайте объект person на 
+//основе класса Person, вызовите метод changeCity с аргументом "New York" 
+//и выведите новое значение свойства city в консоль.
+//class Person {
+  //constructor(name, age, city) {
+    //this.name = name;
+    //this.age = age;
+    //this.city = city;
+  //}
+ // changeCity(newCity){
+   // this.city=newCity;
+   // return this.city;
+
+  //}
+//}
+//const person = new Person("Josh", 43, "london");
+//console.log(person.changeCity("New York" ));
+
+//Задание 23
+//Создайте два класса EmployeeAmazon и EmployeeApple.
+
+//- EmployeeAmazon, EmployeeApple должны содержать свойства name, position и salary, a EmployeeApple должен содержать 
+//еще и метод calculateBonus, который будет увеличивать зарплату на процент, который ты ему передашь аргументом, 
+//и менять ее в поле salary.
+
+//- Создайте обьекты employeeAmazon и employeeApple и заполните их данными:
+//Josh работает в компании Amazon менеджером, и его зарплата составляет 12 000$ в год.
+//Frank работает в компании Apple разработчиком и его зарплата составляет 220 000$ в год.
+
+//- В этом году Josh получит повышение на 15% процентов, а Frank получит повышение на 25%.
+
+//- Используя метод calculateBonus из обьекта employeeApple, повысьте зарплаты этим сотрудникам,
+// не создавая метод calculateBonus в классе EmployeeAmazon.
+
+//- Для изменения зарплаты Josha используйте функцию bind.
+
+//- После изменений зарплат, создайте переменную salaryInfo, в которой будет лежать строка 
+//содержащая информацию о зарплатах вот в таком формате :
+//Frank salary:указать зарплату Franka за год после повышения, Josh salary:указать зарплату Josha за год после повышения
+
+//Выведите переменную salaryInfo в консоль.
